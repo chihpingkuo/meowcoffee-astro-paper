@@ -2,7 +2,7 @@
 author: Chih-Ping Kuo
 pubDatetime: 2025-09-16T15:22:00+08:00
 title: 伊索比亞 果丁丁 天使處理站 藝伎 水洗
-featured: true
+featured: false
 draft: false
 tags:
   - 伊索比亞
