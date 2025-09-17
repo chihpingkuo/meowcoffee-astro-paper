@@ -2,6 +2,8 @@
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
 import IconRss from "@/assets/icons/IconRss.svg";
+import IconLine from "@/assets/icons/IconLine.svg";
+import LinkButton from "./LinkButton.astro";
 
 const currentYear = new Date().getFullYear();
 
@@ -31,7 +33,23 @@ const { noMarginTop = false } = Astro.props;
       />
       <span class="sr-only">RSS Feed</span>
     </a>
-    <Socials centered />
+    <!-- <Socials centered /> -->
+    
+    <a
+      target="_blank"
+      href="https://lin.ee/fbsVpJR"
+      class="p-2 hover:rotate-6 sm:p-1 hover:text-accent"
+      title="Line"
+    >
+      <IconLine
+        width={20}
+        height={20}
+        class="scale-125 fill-current stroke-2 rtl:-rotate-90"
+      />
+      <span class="sr-only">Line</span>
+    </a>
+    
+   
     <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
       <span>Copyright &#169; {currentYear}</span>
       <span class="hidden sm:inline">&nbsp;|&nbsp;</span>
