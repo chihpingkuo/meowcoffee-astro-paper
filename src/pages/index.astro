@@ -46,13 +46,13 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         喵豆商行是由一群熱愛咖啡的夥伴所創立，致力於提供高品質的自家烘焙咖啡豆，讓每一位咖啡愛好者都能享受到新鮮、香醇的咖啡體驗。我們堅持選用優質的咖啡豆，並採用精細的烘焙技術，確保每一批咖啡豆都能展現出最佳風味。無論您是喜歡濃郁的義式咖啡，還是偏愛清爽的手沖咖啡，我們都能滿足您的需求。歡迎來到喵豆商行，一起探索咖啡的美好世界！
       </p>
       <p class="mt-2">
-        Read the blog posts or check
+        精選咖啡豆請至喵豆商行的
         <LinkButton
           class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="https://myship.7-11.com.tw/general/detail/GM2203053416138"
         >
-          README
-        </LinkButton> for more info.
+          7-11賣貨便
+        </LinkButton> 賣場選購。
       </p>
       {
         // only display if at least one social link is enabled
@@ -71,7 +71,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       featuredPosts.length > 0 && (
         <>
           <section id="featured" class="pt-12 pb-6">
-            <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>
+            <h2 class="text-2xl font-semibold tracking-wide">精選</h2>
             <ul>
               {featuredPosts.map(data => (
                 <Card variant="h3" {...data} />
@@ -86,7 +86,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
+          <h2 class="text-2xl font-semibold tracking-wide">近期商品</h2>
           <ul>
             {recentPosts.map(
               (data, index) =>
@@ -99,7 +99,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
     <div class="my-8 text-center">
       <LinkButton href="/posts/">
-        All Posts
+        商品列表
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
     </div>
