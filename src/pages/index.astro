@@ -45,6 +45,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       <p>
         喵豆商行是由一群熱愛咖啡的夥伴所創立，致力於提供高品質的自家烘焙咖啡豆，讓每一位咖啡愛好者都能享受到新鮮、香醇的咖啡體驗。我們堅持選用優質的咖啡豆，並採用精細的烘焙技術，確保每一批咖啡豆都能展現出最佳風味。無論您是喜歡濃郁的義式咖啡，還是偏愛清爽的手沖咖啡，我們都能滿足您的需求。歡迎來到喵豆商行，一起探索咖啡的美好世界！
       </p>
+      <br>
       <p class="mt-2">
         精選咖啡豆請至喵豆商行的
         <LinkButton
@@ -54,7 +55,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           7-11賣貨便
         </LinkButton> 賣場選購。
       </p>
-      {
+      <!-- {
         // only display if at least one social link is enabled
         SOCIALS.length > 0 && (
           <div class="mt-4 flex flex-col sm:flex-row sm:items-center">
@@ -62,7 +63,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
             <Socials />
           </div>
         )
-      }
+      } -->
     </section>
 
     <Hr />
