@@ -13,7 +13,7 @@ description:
 
 Beans: Panama
 
-Roast: Medium-Light
+Roast: Medium-Light, agtron 69.9
 
 Flavor: Berry, Citrus fruit
 		
